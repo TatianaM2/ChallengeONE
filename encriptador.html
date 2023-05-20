@@ -1,12 +1,60 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  
-</body>
-</html>
+  <!DOCTYPE html>
+  <html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <title>Encriptador de Textos</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <img src="imagenes/Logo.png" alt="Logo de alura"> 
+        <h1>Encriptador de Textos</h1>
+      </div>
+    </header>
+    <main>
+      <div class="seccion-contenedor">
+        <section class="seccion-principal">        
+          <textarea class="text-area" id="text-area" autofocus placeholder="Ingrese el texto aquí..."></textarea>
+            <div class="simbolo">
+              <img src="imagenes/bi_exclamation-circle-fill.png" alt="símbolo de alerta">
+              <p>Solo letras minúsculas y sin acentos.</p>
+          </div>     
+          
+          <div class="contenedor-botones">
+              <input class="button-primary" id="encriptar" onclick="encriptar()" type="button" value="Encriptar" >
+              <input class="button-secondary" id="desencriptar" onclick="desencriptar()" type="button" value="Desencriptar">
+          </div>
+        </section>
+
+        <section class="seccion-secundaria">                    
+          <img class="imagen" id="imagen" src="imagenes/busqueda.png" alt="Busqueda de mensaje">
+          <h3 class="mensaje-noencontrado" id="mensaje-noencontrado" >Ningún mensaje fue encontrado</h3>
+          <textarea class="mensaje-ingresar" id="mensaje-ingresar" autofocus placeholder="Ingresa el texto que desees encriptar o desencriptar."></textarea>
+          <input class="button-secondary" id="copiar" onclick="copiar()"  type="button" value="Copiar">
+          
+      </section>
+      </div>
+      <footer>
+        <p>© 2023, made with ❤ by Tatiana Martinez</p>
+        <i class='fa fa-linkedin' style="color:#0A3871"></i> 
+        <a href="linkedin.com/in/tmartinezc25" class="hipervinculos">LinkedIn</a>
+        <i class='fa fa-github' style="color:#0A3871"></i>
+        <a href="https://github.com/TatianaM2" class="hipervinculos">GitHub</a>
+        <i class='fa fa-gitlab' style="color:#0A3871"></i>
+        <a href="https://gitlab.com/tatiana.martinez.castrillon" class="hipervinculos">GitLab</a>
+    </footer>
+
+<script src="encriptador.js">
+
+</script>
+    </main>
+    
+  </body>
+  </html>
